@@ -10,9 +10,9 @@ const ItemListContainer = ({ greeting }) => {
 
     useEffect(() => {
         setloading (true)
-        getProducts(categoryId).then(products => {
+        getProducts(categoryId).then(products =>{
                 setProducts(products)
-            }). finally(() =>{
+            }).finally(() =>{
                 setloading (false)
             })
         },[categoryId])
