@@ -1,17 +1,22 @@
 import React from 'react'
 import './App.css';
-import ItemListContainer from './components/ItemListConteiner/ItemListContainer';
 import Navbar from './components/navbar/Navbar'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ItemListContainer from './components/ItemListConteiner/ItemListContainer';
+import ItemDetailConteiner from './components/ItemDetailConteiner/ItemDetailConteiner';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div id="1" className="App">
-      
-      
-
+    <div className="App">
+      <BrowserRouter>
       <Navbar />
-      <ItemListContainer greeting={'Estos son nuestros productos'}/>
+      <Routes>
+        <Route path='/'element={<ItemListContainer/>}/>
+        <Route path='/category/:categoryId' element={<ItemDetailConteiner />}/>
+        <Route path='/detail/:producId' element={<ItemDetailConteiner />}/>
+      </Routes>
+      
+      </BrowserRouter>
     </div>
   );
 }
