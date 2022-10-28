@@ -1,19 +1,20 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import LogoEcommerce from '../CartWidget/LogoEcommers'
-import { Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav style={{ display: 'flex', justifyContent: 'space-around', background:'black'}}>
-            <div>
+        <nav className='NavBar'>
+            <link to ='/'>
                 <LogoEcommerce />
-            </div>
-            <div>
-                <Link to={'/category/chocolates'} style={{display: 'center', alignItems:'center', color: 'green', borderRadius:'80px 20px', fontWeight: 'bold', fontFamily: 'verdana'}}>Chocolates</Link>
-                <Link to={'/category/pegamentos'} style={{display: 'center', color: 'blue', borderRadius:'80px 20px', fontWeight: 'bold', fontFamily: 'verdana'}}>Pegamentos</Link>
-                <Link to={'/category/filos'} style={{display: 'center', color: 'red', borderRadius:'80px 20px', fontWeight: 'bold', fontFamily: 'verdana'}}>Filos</Link>
-                <Link to={'/category/varios'} style={{display: 'center', color: 'brown', borderRadius:'80px 20px', fontWeight: 'bold', fontFamily: 'verdana'}}>Varios</Link>
+            </link>
+
+            <div className='Categories'>
+                <NavLink to='/category/chocolates' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Chocolates</NavLink>
+                <NavLink to='/category/pegamentos' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >Pegamentos</NavLink>
+                <NavLink to='/category/filos' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Filos</NavLink>
+                <NavLink to='/category/varios' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'} >Varios</NavLink>
             </div>
             <div>
                 <CartWidget />
