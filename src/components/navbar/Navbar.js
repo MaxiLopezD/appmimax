@@ -1,14 +1,14 @@
 import './Navbar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import LogoEcommerce from '../CartWidget/LogoEcommers'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <nav className='NavBar'>
-            <link to ='/'>
+            <Link to ='/'>
                 <LogoEcommerce />
-            </link>
+            </Link>
 
             <div className='Categories'>
                 <NavLink to='/category/chocolates' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Chocolates</NavLink>
