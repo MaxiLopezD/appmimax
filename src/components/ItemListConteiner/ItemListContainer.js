@@ -1,6 +1,6 @@
 import './ItemListContainer.css'
 import { useState, useEffect, useContext } from 'react'
-/* import { getProducts } from '../../asyncMock' */
+
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'

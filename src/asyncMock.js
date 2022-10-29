@@ -1,4 +1,4 @@
-const products = [
+/* const products = [
     { 
         id: '1', 
         name: 'Ferrero 12', 
