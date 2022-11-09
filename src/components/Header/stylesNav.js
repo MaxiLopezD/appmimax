@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     width: 100%;
-    height: 10rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    background: gray;	
+    position:;
+    background: orange;	
     z-index: 2;
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);

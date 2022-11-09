@@ -15,8 +15,6 @@ const NavBar = () => {
         <Header>
             <Logo>
                 <Link to="/"><img src="https://i.postimg.cc/nrGgxFJb/logomimax.png" alt="LOGO"/></Link>
-
-
             </Logo>
 
             <HamburgerMenu onClick={handleClickMenu}>

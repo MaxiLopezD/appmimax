@@ -4,7 +4,6 @@ export const ContainerFooter = styled.footer`
     width: 100%;
     height: 200px;
     margin-top: 90px;
-    background: url("");
 `;
 
 export const PhraseContainer = styled.div`
