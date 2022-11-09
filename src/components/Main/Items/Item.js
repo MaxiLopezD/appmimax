@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-    ContainerFatherItem,
-    ContainerItem,
-    ContainerDetails,
-    InputDetail,
-    PriceDetail,
-    TextStock,
-    Img,
-} from "../stylesMain";
+import {ContainerFatherItem,ContainerItem,ContainerDetails,InputDetail,PriceDetail,TextStock,Img,} from "../stylesMain";
 
 const Item = ({ item }) => {
 

@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { ButtonBack } from "../Main/Items/Detail/stylesFinishbutton";
 
 const FormInputs = ({ setName, setEmail, setNumber, setCity, setHome, buttonSubmitValue }) => {

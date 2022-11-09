@@ -1,4 +1,4 @@
-import NavBar from ".//components/Header/Navbar";
+import NavBar from "./components/Header/Navbar";
 import Inicio from "./pages/Inicio";
 import ItemListContainer from "./components/Main/Items/ItemListcontainer";
 import ItemDetailContainer from "./pages/ItemDetailContainer";

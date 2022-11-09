@@ -9,13 +9,13 @@ export const ContainerItemCount = styled.div`
     border-radius: 6px;
     position: absolute;
     bottom: -146px;
-@media (min-width: 848px) {
-    width: 400px;
-    height: 175px;
-    border-radius: 6px;
-    position: relative;
-    top: 30px;
-}
+    @media (min-width: 848px) {
+        width: 400px;
+        height: 175px;
+        border-radius: 6px;
+        position: relative;
+        top: 30px;
+    }
 `;
 
 export const ContainerInputs = styled.div`
@@ -47,16 +47,17 @@ export const ContainerFatherItem = styled.div`
     justify-items: center;
     margin-top: 8vh;
     gap: 40px;
-@media (min-width: 868px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 40px;
-}
-@media (min-width: 1323px) {
-    gap: 0;
-    row-gap: 40px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-`;
+
+    @media (min-width: 868px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 40px;
+    }
+    @media (min-width: 1323px) {
+        gap: 0;
+        row-gap: 40px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    `;
 
 export const ContainerItem = styled.div`
     display: flex;
@@ -74,12 +75,12 @@ export const ContainerItem = styled.div`
     0 1px 2px -1px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-@media (min-width: 600px) {
-    width: 500px;
-}
-@media (min-width: 768px) {
-    width: 420px;
-}
+    @media (min-width: 600px) {
+        width: 500px;
+    }
+    @media (min-width: 768px) {
+        width: 420px;
+    }
 `;
 
 export const ContentImage = styled.img`
@@ -136,24 +137,24 @@ export const TextStock = styled.span`
     font-weight: 700;
     white-space: nowrap;
     z-index: 1;
-@media (min-width: 768px) {
-    margin-top: 15px;
-}
+    @media (min-width: 768px) {
+        margin-top: 15px;
+    }
 `;
 
 export const Img = styled.img`
     width: 100%;
     height: 240px;
     object-fit: contain;
-@media (min-width: 768px) {
-    height: 400px;
-    object-fit: cover;
-    transition: all 1s ease-in-out;
-    &:hover {
-    cursor: move;
-    height: 380px;
+    @media (min-width: 768px) {
+        height: 400px;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+        &:hover {
+        cursor: move;
+        height: 380px;
+        }
     }
-}
 `;
 
 export const ContainerFatherItemsHome = styled.div`
@@ -163,13 +164,13 @@ export const ContainerFatherItemsHome = styled.div`
     justify-items: center;
     margin-top: 8vh;
     gap: 40px;
-@media (min-width: 868px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 40px;
-}
-@media (min-width: 1323px) {
-    gap: 60px;
-    row-gap: 40px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
+    @media (min-width: 868px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 40px;
+    }
+    @media (min-width: 1323px) {
+        gap: 60px;
+        row-gap: 40px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 `;

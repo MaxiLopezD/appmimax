@@ -7,7 +7,6 @@ import {
     PhraseContainer,
     Socials,
 } from "./stylesFooter";
-import { Logo, Span } from "../Header/stylesNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 

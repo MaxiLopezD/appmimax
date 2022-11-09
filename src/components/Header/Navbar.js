@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { hamburgerMenu } from "../../img";
 import CartWidget from "./CartWidget";
-import {Header,Logo,Span,HamburgerMenu,ShowHamburgerMenu,} from "./stylesNav";
+import {Header,Logo,HamburgerMenu,ShowHamburgerMenu,} from "./stylesNav";
 
 const NavBar = () => {
     const [menuHide, setMenuHide] = useState(false);
@@ -14,9 +14,7 @@ const NavBar = () => {
     return (
         <Header>
             <Logo>
-                <Link to="/"><img
-                    src="https://i.postimg.cc/nrGgxFJb/logomimax.png"
-                /></Link>
+                <Link to="/"><img src="https://i.postimg.cc/nrGgxFJb/logomimax.png" alt="LOGO"/></Link>
 
 
             </Logo>
